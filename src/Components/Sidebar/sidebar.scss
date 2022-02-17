@@ -1,0 +1,204 @@
+.sidebar {
+  width: 279px;
+  height: 100%;
+  border-right: 1px solid gray;
+  .logoContainer {
+    background-color: rgb(6 13 19);
+    padding: 5px;
+    padding-left: 20px;
+    border-bottom: 1px solid gray;
+  }
+  .marketContainer {
+    background-color: rgb(6 13 19);
+    display: flex;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid darkgray;
+    color: white;
+    .currency {
+      display: flex;
+      padding-left: 28px;
+      h4 {
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+    .market {
+      display: flex;
+      margin-left: 20px;
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  .sidebar-body {
+    height: 84.5%;
+    background-color: #121d27;
+    .c {
+      height: 40px;
+    }
+    .startContainer {
+      margin-bottom: 40px;
+      padding: 20px 28px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-size: 16px;
+      }
+      button {
+        height: 40px;
+        width: 222px;
+        background-color: #0e7dff;
+        color: white;
+        margin-top: 20px;
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+      }
+    }
+    .orderContainer {
+      position: relative;
+      margin: 0 5%;
+      .overlay {
+        position: absolute;
+        background-color: rgb(18, 29, 39, 0.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        p {
+          display: none;
+        }
+        button {
+          display: none;
+        }
+      }
+      .form {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        color: white;
+        padding: 10px;
+        h3 {
+          font-size: 14px;
+        }
+      }
+      .sidebar-bottom {
+        height: 100%;
+        margin: 0 5%;
+        .btns {
+          margin-top: 20px;
+          display: flex;
+          button {
+            width: 50%;
+            height: 30px;
+            font-size: 10px;
+            color: white;
+            background-color: gray;
+            border: none;
+          }
+          .buyBtn {
+            background-color: green;
+          }
+        }
+        .tabs {
+          margin-top: 20px;
+          display: flex;
+          color: white;
+          border-bottom: 2px solid gray;
+          justify-content: space-between;
+          height: 20px;
+          font-size: 12px;
+          .marketTab {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width: 33%;
+            border-bottom: 3px solid white;
+          }
+          p {
+            width: 33%;
+            text-align: center;
+          }
+        }
+        .amount {
+          margin-top: 20px;
+          font-size: 12px;
+          color: lightgray;
+          .total {
+            margin: 5px 0;
+            display: flex;
+            background-color: gray;
+            height: 40px;
+            align-items: center;
+            justify-content: right;
+            h5 {
+              font-size: 14px;
+              margin: 0 10px;
+            }
+          }
+        }
+        .invoice {
+          margin: 20px 0 0 0;
+          border-top: 2px solid gray;
+          color: lightgray;
+          font-size: 12px;
+          margin-bottom: 20px;
+          .fees {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          button {
+            margin: 10px;
+            width: 100%;
+            height: 40px;
+            color: white;
+            background-color: gray;
+            font-size: 11px;
+          }
+        }
+      }
+      &:hover {
+        .overlay {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: white;
+          background-color: rgba(6, 13, 19, 0.7);
+          button {
+            display: block;
+            height: 40px;
+            width: 65%;
+            background-color: #0e7dff;
+            color: white;
+            font-size: 10px;
+            border: none;
+          }
+          p {
+            display: block;
+            margin: 10px;
+            font-size: 12px;
+          }
+          .Login {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.tabbar {
+  background-color: #060d13;
+  border: none;
+  border-top: 1px solid gray;
+  display: flex;
+  height: 56px;
+  .tabbar_right {
+    display: flex;
+    align-items: center;
+    .item {
+      margin: 0 10px;
+      h4 {
+        color: white;
+        font-size: 14px;
+      }
+      .color {
+        color: green;
+      }
+      p {
+        font-size: 11px;
+        color: gray;
+      }
+    }
+  }
+}

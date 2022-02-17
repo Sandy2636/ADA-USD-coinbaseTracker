@@ -1,0 +1,54 @@
+.navbar {
+  background-color: #060d13;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  height: 57px;
+  .nav_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .navTrade {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 92px;
+      height: 98%;
+      border: none;
+      border-bottom: 4px solid blue;
+      border-right: 1px solid gray;
+      .trade {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+      &:hover {
+        background-color: rgb(18 29 39);
+      }
+    }
+    .navOptions {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      h4 {
+        margin: 0 15px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          color: #0e7dff;
+        }
+      }
+      button {
+        margin: 0 15px;
+        width: 140px;
+        height: 30px;
+        font-size: 10px;
+        background-color: #0e7dff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
